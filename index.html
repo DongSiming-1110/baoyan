@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DSM 保研信息分享站，面向浙江中医药大学学生的保研路线、材料清单、复试面试与常见问题。"
+    />
+    <title>DSM | 保研信息分享</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="回到 DSM 首页">
+        <span class="brand-mark">DSM</span>
+        <span>保研信息分享</span>
+      </a>
+      <nav class="top-nav" aria-label="主导航">
+        <a href="#home" data-route="home">首页</a>
+        <a href="#roadmap" data-route="roadmap">路线图</a>
+        <a href="#materials" data-route="materials">材料库</a>
+        <a href="#interview" data-route="interview">复试面试</a>
+        <a href="#faq" data-route="faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="view is-active" id="view-home" data-view="home">
+        <div class="hero">
+          <div class="hero-copy">
+            <h1>保研信息分享站</h1>
+            <p class="maker-line">DSM制作（已推免至复旦大学）</p>
+            <p class="hero-lede">
+              面向浙江中医药大学学生的保研准备入口。把时间线、材料、信息来源、面试复盘和常见问题集中到一个可跳转的页面里，先做第一版，之后可以持续补充真实经验与链接。
+            </p>
+            <div class="hero-actions" aria-label="快捷操作">
+              <a class="button primary" href="#roadmap">查看路线图</a>
+              <a class="button secondary" href="#materials">进入材料库</a>
+              <a class="button secondary" href="#interview">复试面试</a>
+            </div>
+          </div>
+
+          <div class="hero-panel" aria-label="保研信息地图">
+            <div class="panel-title">
+              <span>信息地图</span>
+              <small>点击节点跳转</small>
+            </div>
+            <div class="map-grid">
+              <a class="map-node node-strong" href="#roadmap" data-map="timeline">
+                <span>路线图</span>
+                <small>准备节奏（大一到大四）</small>
+              </a>
+              <a class="map-node" href="#materials" data-map="materials">
+                <span>材料库</span>
+                <small>材料清单（证明与文书）</small>
+              </a>
+              <a class="map-node" href="#interview" data-map="interview">
+                <span>复试面试</span>
+                <small>夏令营 / 预推免 / 九推</small>
+              </a>
+              <a class="map-node" href="#faq" data-map="sources">
+                <span>信息来源</span>
+                <small>官网与学院</small>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <section class="showcase-carousel" aria-labelledby="showcase-title">
+          <div class="carousel-copy">
+            <p class="eyebrow">Gallery</p>
+            <h2 id="showcase-title">保研准备图册</h2>
+            <p>用轮播把关键场景可视化：信息追踪、材料整理、面试准备、拟录取确认。后续可以替换成真实经验截图、资料封面或院校项目卡片。</p>
+          </div>
+          <div class="carousel-shell image-carousel" data-carousel>
+            <div class="carousel-viewport">
+              <div class="carousel-track" data-carousel-track>
+                <figure class="carousel-slide is-current" data-slide>
+                  <img src="./assets/carousel-roadmap.png" alt="路线图主题轮播图" />
+                  <figcaption>
+                    <span>01</span>
+                    <strong>把时间节点先铺开</strong>
+                    <small>从夏令营到九推，每个阶段都要有清晰的报名、提交、面试和确认节奏。</small>
+                  </figcaption>
+                </figure>
+                <figure class="carousel-slide" data-slide>
+                  <img src="./assets/carousel-materials.png" alt="材料库主题轮播图" />
+                  <figcaption>
+                    <span>02</span>
+                    <strong>材料夹越早越稳</strong>
+                    <small>简历、个人陈述、推荐信、成绩排名、英语成绩和论文作品集要按院校版本管理。</small>
+                  </figcaption>
+                </figure>
+                <figure class="carousel-slide" data-slide>
+                  <img src="./assets/carousel-interview.png" alt="复试面试主题轮播图" />
+                  <figcaption>
+                    <span>03</span>
+                    <strong>面试靠表达，也靠复盘</strong>
+                    <small>中文、英文、科研追问和专业基础都要练，练完之后及时写下复盘。</small>
+                  </figcaption>
+                </figure>
+                <figure class="carousel-slide" data-slide>
+                  <img src="./assets/carousel-offer.png" alt="拟录取确认主题轮播图" />
+                  <figcaption>
+                    <span>04</span>
+                    <strong>确认前再核对一遍</strong>
+                    <small>系统确认、材料补交、导师沟通和后续安排都要留痕，稳稳收尾。</small>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="carousel-controls" aria-label="轮播控制">
+              <button type="button" class="carousel-button" data-carousel-prev aria-label="上一张">‹</button>
+              <div class="carousel-dots" role="tablist" aria-label="轮播分页">
+                <button type="button" class="is-current" data-carousel-dot aria-label="第 1 张"></button>
+                <button type="button" data-carousel-dot aria-label="第 2 张"></button>
+                <button type="button" data-carousel-dot aria-label="第 3 张"></button>
+                <button type="button" data-carousel-dot aria-label="第 4 张"></button>
+              </div>
+              <button type="button" class="carousel-button" data-carousel-next aria-label="下一张">›</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-grid" aria-labelledby="today-title">
+          <div class="section-intro">
+            <p class="eyebrow">Start Here</p>
+            <h2 id="today-title">先看这三件事</h2>
+            <p>
+              本网页后续会更新，现为最初版本，主要聚焦“从哪里开始、准备什么、如何判断信息可靠”。后续会继续加入本人整理的院校项目、推免公告链接、复盘文章和下载资料。
+            </p>
+          </div>
+          <div class="feature-list">
+            <article class="feature-item">
+              <span class="feature-index">01</span>
+              <h3>确认本校规则</h3>
+              <p>保研名额、综合测评、加分项、学院细则每年可能变化，页面中所有政策类信息都应以学校和学院最新通知为准。</p>
+            </article>
+            <article class="feature-item">
+              <span class="feature-index">02</span>
+              <h3>搭好个人材料</h3>
+              <p>成绩排名、英语成绩、科研经历、竞赛获奖、志愿服务、个人陈述和推荐信是常见基础模块。</p>
+            </article>
+            <article class="feature-item">
+              <span class="feature-index">03</span>
+              <h3>建立申请节奏</h3>
+              <p>夏令营、预推免、九推三个阶段各有节奏，可以按目标院校和专业方向提前做表格追踪。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="quick-jump" aria-labelledby="jump-title">
+          <div>
+            <p class="eyebrow">Jump</p>
+            <h2 id="jump-title">快速跳转</h2>
+          </div>
+          <div class="jump-links">
+            <a href="#roadmap">年度时间轴</a>
+            <a href="#materials">文书材料</a>
+            <a href="#materials-checklist">材料勾选</a>
+            <a href="#interview">复试面试</a>
+            <a href="#faq">常见问题</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="view-roadmap" data-view="roadmap">
+        <div class="page-title">
+          <p class="eyebrow">Roadmap</p>
+          <h1>保研准备路线图</h1>
+          <p>按阶段整理任务，适合先搭整体框架。具体节点请结合浙江中医药大学当年推免通知、学院细则和目标院校公告调整。</p>
+        </div>
+
+        <div class="timeline" aria-label="保研时间轴">
+          <article class="timeline-item">
+            <span class="time-tag">大一至大二</span>
+            <h2>夯实成绩与方向感</h2>
+            <p>优先稳定绩点和专业排名，了解本专业可申请方向；同步积累英语、科研训练、竞赛和志愿服务等可量化材料。</p>
+          </article>
+          <article class="timeline-item">
+            <span class="time-tag">大三上</span>
+            <h2>建立申请资料夹</h2>
+            <p>整理成绩单、排名证明、证书扫描件、科研经历、获奖清单；开始写个人陈述和简历第一版。</p>
+          </article>
+          <article class="timeline-item">
+            <span class="time-tag">大三下</span>
+            <h2>关注夏令营与项目公告</h2>
+            <p>按目标院校建立追踪表，记录报名时间、材料要求、导师方向、考核形式和结果反馈。</p>
+          </article>
+          <article class="timeline-item">
+            <span class="time-tag">大四前后</span>
+            <h2>预推免与正式推免</h2>
+            <p>复核本校推免资格，完成系统填报；根据目标院校要求准备面试、笔试、英语问答和科研介绍。</p>
+          </article>
+        </div>
+
+        <section class="route-lab" aria-labelledby="route-lab-title">
+          <div class="section-intro">
+            <p class="eyebrow">Map Detail</p>
+            <h2 id="route-lab-title">点击切换信息板</h2>
+          </div>
+          <div class="route-tabs" role="tablist" aria-label="路线主题">
+            <button class="tab-button is-selected" type="button" data-topic="timeline">准备节奏</button>
+            <button class="tab-button" type="button" data-topic="profile">个人画像</button>
+            <button class="tab-button" type="button" data-topic="school">院校筛选</button>
+            <button class="tab-button" type="button" data-topic="interview">面试训练</button>
+          </div>
+          <article class="topic-panel" id="topic-panel" aria-live="polite"></article>
+        </section>
+      </section>
+
+      <section class="view" id="view-materials" data-view="materials">
+        <div class="page-title">
+          <p class="eyebrow">Materials</p>
+          <h1>材料库与清单</h1>
+          <p>相关材料模板本人正在整理，具体可以先私信本人，后续会整理到百度网盘提供给大家。</p>
+        </div>
+
+        <section class="search-box" aria-labelledby="search-title">
+          <div>
+            <h2 id="search-title">按关键词查找内容</h2>
+            <p>输入“成绩”“英语”“科研”“面试”“套磁”等关键词，快速定位对应模块。</p>
+          </div>
+          <label>
+            <span>关键词</span>
+            <input id="resource-search" type="search" placeholder="例如：个人陈述" autocomplete="off" />
+          </label>
+        </section>
+
+        <div class="resource-grid" id="resource-grid">
+          <article class="resource-card" data-keywords="成绩 排名 证明 教务">
+            <h2>成绩与排名</h2>
+            <p>成绩单、专业排名证明、综合测评证明、课程绩点说明。建议保留纸质盖章件和高清扫描件。</p>
+            <a href="#materials-checklist">去勾选清单</a>
+          </article>
+          <article class="resource-card" data-keywords="英语 六级 四级 雅思 托福">
+            <h2>英语能力</h2>
+            <p>CET-4/CET-6、雅思、托福等成绩截图或证书。面试中常见英文自我介绍、专业问题和科研介绍。</p>
+            <a href="#interview">查看面试准备</a>
+          </article>
+          <article class="resource-card" data-keywords="科研 论文 项目 实验 课题">
+            <h2>科研经历</h2>
+            <p>项目名称、承担角色、方法、结果、收获；如有论文、专利、会议摘要，需要注明状态和个人贡献。</p>
+            <a href="#interview">查看表达框架</a>
+          </article>
+          <article class="resource-card" data-keywords="文书 简历 个人陈述 推荐信 套磁">
+            <h2>文书资料</h2>
+            <p>个人简历、个人陈述、专家推荐信、套磁信、获奖清单。建议准备中英文两个版本的核心表达。</p>
+            <a href="#materials-checklist">查看清单</a>
+          </article>
+        </div>
+
+        <section class="checklist" id="materials-checklist" aria-labelledby="checklist-title">
+          <div class="section-intro">
+            <p class="eyebrow">Checklist</p>
+            <h2 id="checklist-title">材料勾选</h2>
+          </div>
+          <div class="checklist-grid">
+            <label><input type="checkbox" data-save="transcript" /> 成绩单与排名证明</label>
+            <label><input type="checkbox" data-save="english" /> 英语成绩证明</label>
+            <label><input type="checkbox" data-save="cv" /> 个人简历</label>
+            <label><input type="checkbox" data-save="statement" /> 个人陈述</label>
+            <label><input type="checkbox" data-save="awards" /> 获奖证书扫描件</label>
+            <label><input type="checkbox" data-save="research" /> 科研/论文证明</label>
+            <label><input type="checkbox" data-save="recommendation" /> 推荐信或推荐人信息</label>
+            <label><input type="checkbox" data-save="target-table" /> 目标院校追踪表</label>
+            <label><input type="checkbox" data-save="defense-ppt" /> 目标院校答辩PPT</label>
+            <label><input type="checkbox" data-save="contact-email" /> 套磁信</label>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="view-interview" data-view="interview">
+        <div class="page-title">
+          <p class="eyebrow">Interview</p>
+          <h1>复试面试</h1>
+          <p>这一页按夏令营、预推免、九推三个阶段整理。内容参考了已整理资料中的模拟面试、夏令营PPT、套磁信、预推免材料和院校投递表，具体模板后续会继续补充。</p>
+        </div>
+
+        <div class="stage-grid">
+          <article class="stage-card">
+            <span class="stage-tag">Stage 01</span>
+            <h2>夏令营</h2>
+            <p>夏令营更像提前展示综合潜力：材料投递、入营筛选、营内讲座、导师交流、PPT展示和面试考核通常会集中出现。</p>
+            <ul>
+              <li>提前准备个人简历、个人陈述、论文作品集和成绩排名证明。</li>
+              <li>准备一份可灵活改动的展示PPT，重点讲清个人优势、研究经历和未来方向。</li>
+              <li>面试前用中文、英文各准备一版自我介绍，并能回答论文或项目细节。</li>
+            </ul>
+          </article>
+          <article class="stage-card">
+            <span class="stage-tag">Stage 02</span>
+            <h2>预推免</h2>
+            <p>预推免材料更细，节奏也更密。不同院校可能要求报名表、专家推荐信、成绩排名模板、诚信承诺书、学籍验证、思想品德考核等。</p>
+            <ul>
+              <li>按学校建立文件夹，统一命名材料，避免提交时找不到版本。</li>
+              <li>把“申请材料目录清单”放在最前面，逐项核对 PDF、压缩包和系统填报内容。</li>
+              <li>面试重点准备研究计划、专业基础、英语问答和“为什么选择该校该方向”。</li>
+            </ul>
+          </article>
+          <article class="stage-card">
+            <span class="stage-tag">Stage 03</span>
+            <h2>九推</h2>
+            <p>九推更看信息速度和确认效率。此时要盯紧系统开放、复试通知、待录取确认和补录机会，保持手机、邮箱、系统消息同步查看。</p>
+            <ul>
+              <li>提前整理最终版简历、证书、成绩单、英语成绩、科研材料和套磁记录。</li>
+              <li>准备简洁版答辩PPT和无PPT口头介绍，两种场景都能应对。</li>
+              <li>收到待录取或复试通知后，第一时间核对时间、平台、材料补交和确认要求。</li>
+            </ul>
+          </article>
+        </div>
+
+        <section class="interview-prep-panel" aria-labelledby="interview-prep-title">
+          <p class="eyebrow">Practice</p>
+          <h2 id="interview-prep-title">面试准备重点</h2>
+          <div class="interview-columns">
+            <article>
+              <h3>中文表达</h3>
+              <p>自我介绍、为什么选择该方向、科研经历复盘、课程基础、职业规划、对公共管理/卫生治理/中医药相关议题的理解。</p>
+            </article>
+            <article>
+              <h3>英文表达</h3>
+              <p>个人介绍、专业兴趣、科研项目、未来计划。先准备 60 秒和 120 秒两个版本，避免现场过长。</p>
+            </article>
+            <article>
+              <h3>科研追问</h3>
+              <p>用“问题-方法-结果-反思”的顺序表达，突出自己真正参与的步骤和能回答细节的问题。</p>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="view-faq" data-view="faq">
+        <div class="page-title">
+          <p class="eyebrow">FAQ</p>
+          <h1>常见问题</h1>
+          <p>第一版 FAQ 用于占位和导航。后续可以把浙江中医药大学各学院的最新通知链接集中到这里。</p>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>这个网站可以给别人访问吗？</summary>
+            <p>可以。当前文件是纯静态网页，别人可以通过公开链接访问。</p>
+          </details>
+          <details>
+            <summary>页面里的政策信息能直接作为依据吗？</summary>
+            <p>不能。推免规则、名额、排名口径、加分细则都可能变化，正式依据应以浙江中医药大学、学院和目标院校当年发布的通知为准。</p>
+          </details>
+          <details>
+            <summary>后续可以增加哪些内容？</summary>
+            <p>可以增加公告链接、院校项目表、经验文章、下载资料、面试题库、时间提醒、在线表单或投稿入口。</p>
+          </details>
+          <details>
+            <summary>为什么叫 DSM？</summary>
+            <p>没有为什么哈哈哈哈哈哈哈。</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>DSM 保研信息分享站 · 最初版本 · 更新日期：2026-05-20</p>
+      <a href="#home">返回顶部</a>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
