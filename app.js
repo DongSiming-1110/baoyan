@@ -34,6 +34,8 @@ const routeAliases = {
   "interview-prep": "interview",
 };
 
+const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
+
 function activateRoute() {
   const hash = window.location.hash.replace("#", "") || "home";
   const route = routeAliases[hash] || (routeMap[hash] ? hash : "home");
@@ -48,10 +50,10 @@ function activateRoute() {
 
   if (routeAliases[hash]) {
     requestAnimationFrame(() => {
-      document.getElementById(hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      document.getElementById(hash)?.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
     });
   } else {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: prefersReducedMotion ? "auto" : "smooth" });
   }
 }
 
@@ -130,6 +132,7 @@ function bindCarousel() {
 
   function startAutoPlay() {
     window.clearInterval(timer);
+    if (prefersReducedMotion) return;
     timer = window.setInterval(() => showSlide(index + 1), 4200);
   }
 

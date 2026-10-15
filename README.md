@@ -1,33 +1,14 @@
-# DSM 保研信息分享站
+# DoSimi 保研信息分享站
 
-这是一个面向浙江中医药大学学生的保研信息分享静态网页第一版。
+免费开放、不用注册的静态保研信息分享站，包含准备路线、夏令营与预推免流程、材料清单、面试重点和常见问题。
 
-## 本地查看
+- 主入口：<https://ai-mingrizhiwai-baoyan.netlify.app/>
+- GitHub Pages 备用入口：<https://dongsiming-1110.github.io/baoyan/>
 
-直接打开 `index.html` 即可查看。如果想用本地服务器预览，可以在本目录运行：
+2026-10-15 更新：站内品牌统一为 DoSimi，加入本人头像、免费使用说明和三阶段申请流程。所有轮播主题图与背景水印都已更新为可编辑 SVG。保留页面切换、搜索、清单记忆和轮播；支持减少动态效果的系统偏好。
 
-```powershell
-python -m http.server 5173
-```
+GitHub Pages 从 main 分支根目录发布，无需构建。网站文件为 index.html、styles.css、brand-update.css、app.js 和 assets 下被引用的素材。HTML/CSS/JS 和 SVG 均可直接编辑，图片使用相对路径。
 
-然后访问 `http://localhost:5173`。
+Netlify 账号本次部署被额度限制拒绝，因此该入口当前仍是旧版。原 Netlify 源工程没有被修改，改版内容在本地另存为 Netlify-DoSimi，并附有干净部署包与发布说明。这些本机记录不提交到公开代码仓库。
 
-## 公开访问
-
-这是纯静态网页，可以部署到 Netlify、GitHub Pages、Vercel 或任意静态服务器。
-
-Netlify 最简单的方式：
-
-1. 进入 Netlify。
-2. 选择 “Add new site”。
-3. 上传整个 `dsm-baoyan-site` 文件夹。
-4. Netlify 会生成一个公开链接，别人就可以访问。
-
-## 后续可补充内容
-
-- 浙江中医药大学及各学院推免通知链接。
-- 目标院校夏令营、预推免、九推公告表。
-- DSM 自己整理的经验文章、面试复盘和资料下载。
-- 投稿入口、资料更新日志、FAQ 维护页面。
-
-政策类信息务必以学校、学院和目标院校当年发布的正式通知为准。
+清单状态只保存在当前浏览器的 localStorage。具体院校条件、名额、报名时间与确认要求请以学校及学院当年官方公告为准。

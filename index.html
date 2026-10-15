@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="DSM 保研信息分享站，面向浙江中医药大学学生的保研路线、材料清单、复试面试与常见问题。"
+      content="DoSimi 保研信息分享站，免费开放、不用注册。从夏令营、预推免到正式推免，一起理清准备路线、材料清单与面试重点。"
     />
-    <title>DSM | 保研信息分享</title>
+    <title>DoSimi | 免费保研信息分享</title>
+    <meta name="theme-color" content="#0f4d43" />
+    <meta property="og:title" content="DoSimi · 免费保研信息分享站" />
+    <meta property="og:description" content="从夏令营、预推免到正式推免，把准备路线、材料和面试放在一起。欢迎来看看。" />
+    <meta property="og:image" content="https://dongsiming-1110.github.io/baoyan/assets/creator-avatar.webp" />
+    <link rel="icon" href="./assets/dosimi-icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./brand-update.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="回到 DSM 首页">
-        <span class="brand-mark">DSM</span>
+      <a class="brand" href="#home" aria-label="回到 DoSimi 首页">
+        <span class="brand-mark">DoSimi</span>
         <span>保研信息分享</span>
       </a>
       <nav class="top-nav" aria-label="主导航">
@@ -29,10 +35,14 @@
       <section class="view is-active" id="view-home" data-view="home">
         <div class="hero">
           <div class="hero-copy">
+            <p class="open-access"><span aria-hidden="true"></span> 免费开放 · 不用注册</p>
             <h1>保研信息分享站</h1>
-            <p class="maker-line">DSM制作（已推免至复旦大学）</p>
+            <div class="creator-line">
+              <img src="./assets/creator-avatar.webp" width="64" height="64" alt="DoSimi 的个人头像" fetchpriority="high" />
+              <div><p class="maker-line">DoSimi 制作</p><p>把我整理的保研信息，分享给正在准备的你。</p></div>
+            </div>
             <p class="hero-lede">
-              面向浙江中医药大学学生的保研准备入口。把时间线、材料、信息来源、面试复盘和常见问题集中到一个可跳转的页面里，先做第一版，之后可以持续补充真实经验与链接。
+              我建立了这个免费的保研信息分享站，欢迎来看看。从夏令营、预推免到正式推免，把准备路线、材料清单、面试重点和常见问题放在一起，方便你按阶段查找。
             </p>
             <div class="hero-actions" aria-label="快捷操作">
               <a class="button primary" href="#roadmap">查看路线图</a>
@@ -67,17 +77,27 @@
           </div>
         </div>
 
+        <section class="admission-flow" aria-labelledby="admission-flow-title">
+          <div class="flow-heading"><p class="eyebrow">THE APPLICATION JOURNEY</p><h2 id="admission-flow-title">先看清流程，再一步步准备</h2><p>各校安排有所不同，请结合本校推免规则和目标院校当年公告使用。</p></div>
+          <ol class="flow-steps">
+            <li><a href="#interview"><span class="flow-number">01</span><div><h3>夏令营</h3><p>关注公告 → 提交材料 → 入营与考核</p></div><span class="flow-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="#interview"><span class="flow-number">02</span><div><h3>预推免</h3><p>追踪院校 → 申请报名 → 复试面试</p></div><span class="flow-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="#interview"><span class="flow-number">03</span><div><h3>正式推免</h3><p>核实资格 → 系统填报 → 按要求确认</p></div><span class="flow-arrow" aria-hidden="true">↗</span></a></li>
+          </ol>
+          <p class="flow-note">夏令营、预推免的考核结果与正式录取有关联，但仍须按官方要求完成后续申请与确认。</p>
+        </section>
+
         <section class="showcase-carousel" aria-labelledby="showcase-title">
           <div class="carousel-copy">
             <p class="eyebrow">Gallery</p>
             <h2 id="showcase-title">保研准备图册</h2>
-            <p>用轮播把关键场景可视化：信息追踪、材料整理、面试准备、拟录取确认。后续可以替换成真实经验截图、资料封面或院校项目卡片。</p>
+            <p>信息追踪、材料整理、面试准备、拟录取确认。按四个场景找到你现在最需要准备的内容。</p>
           </div>
           <div class="carousel-shell image-carousel" data-carousel>
             <div class="carousel-viewport">
               <div class="carousel-track" data-carousel-track>
                 <figure class="carousel-slide slide-roadmap is-current" data-slide>
-                  <img src="./assets/carousel-roadmap.png" alt="路线图主题轮播图" onerror="this.closest('[data-slide]').classList.add('image-missing')" />
+                  <img src="./assets/dosimi-roadmap.svg" alt="DoSimi 路线图：从准备到确认的四个阶段" onerror="this.closest('[data-slide]').classList.add('image-missing')" />
                   <figcaption>
                     <span>01</span>
                     <strong>把时间节点先铺开</strong>
@@ -85,7 +105,7 @@
                   </figcaption>
                 </figure>
                 <figure class="carousel-slide slide-materials" data-slide>
-                  <img src="./assets/carousel-materials.png" alt="材料库主题轮播图" onerror="this.closest('[data-slide]').classList.add('image-missing')" />
+                  <img src="./assets/dosimi-materials.svg" alt="DoSimi 材料库：简历、文书与证明材料" onerror="this.closest('[data-slide]').classList.add('image-missing')" />
                   <figcaption>
                     <span>02</span>
                     <strong>材料夹越早越稳</strong>
@@ -93,7 +113,7 @@
                   </figcaption>
                 </figure>
                 <figure class="carousel-slide slide-interview" data-slide>
-                  <img src="./assets/carousel-interview.png" alt="复试面试主题轮播图" onerror="this.closest('[data-slide]').classList.add('image-missing')" />
+                  <img src="./assets/dosimi-interview.svg" alt="DoSimi 复试面试：中文、英文与科研表达" onerror="this.closest('[data-slide]').classList.add('image-missing')" />
                   <figcaption>
                     <span>03</span>
                     <strong>面试靠表达，也靠复盘</strong>
@@ -101,7 +121,7 @@
                   </figcaption>
                 </figure>
                 <figure class="carousel-slide slide-offer" data-slide>
-                  <img src="./assets/carousel-offer.png" alt="拟录取确认主题轮播图" onerror="this.closest('[data-slide]').classList.add('image-missing')" />
+                  <img src="./assets/dosimi-offer.svg" alt="DoSimi 拟录取确认：核对要求并完成系统确认" onerror="this.closest('[data-slide]').classList.add('image-missing')" />
                   <figcaption>
                     <span>04</span>
                     <strong>确认前再核对一遍</strong>
@@ -128,7 +148,7 @@
             <p class="eyebrow">Start Here</p>
             <h2 id="today-title">先看这三件事</h2>
             <p>
-              本网页后续会更新，现为最初版本，主要聚焦“从哪里开始、准备什么、如何判断信息可靠”。后续会继续加入本人整理的院校项目、推免公告链接、复盘文章和下载资料。
+              第一次准备保研，可以先完成这三件事。网站目前提供准备框架与清单，更多经验和资料会在整理完成后补充。
             </p>
           </div>
           <div class="feature-list">
@@ -169,7 +189,7 @@
         <div class="page-title">
           <p class="eyebrow">Roadmap</p>
           <h1>保研准备路线图</h1>
-          <p>按阶段整理任务，适合先搭整体框架。具体节点请结合浙江中医药大学当年推免通知、学院细则和目标院校公告调整。</p>
+          <p>按阶段整理任务，适合先搭整体框架。具体节点请结合所在学校当年推免通知、学院细则和目标院校公告调整。</p>
         </div>
 
         <div class="timeline" aria-label="保研时间轴">
@@ -214,7 +234,7 @@
         <div class="page-title">
           <p class="eyebrow">Materials</p>
           <h1>材料库与清单</h1>
-          <p>相关材料模板本人正在整理，具体可以先私信本人，后续会整理到百度网盘提供给大家。</p>
+          <p>先按下面的分类整理自己的申请材料，勾选清单会保存在当前浏览器。材料模板正在整理，当前页面提供的是准备清单，尚未开放模板下载。</p>
         </div>
 
         <section class="search-box" aria-labelledby="search-title">
@@ -317,7 +337,7 @@
           <div class="interview-columns">
             <article>
               <h3>中文表达</h3>
-              <p>自我介绍、为什么选择该方向、科研经历复盘、课程基础、职业规划、对公共管理/卫生治理/中医药相关议题的理解。</p>
+              <p>自我介绍、为什么选择该方向、科研经历复盘、课程基础、职业规划，以及对目标专业相关议题和研究方向的理解。</p>
             </article>
             <article>
               <h3>英文表达</h3>
@@ -335,33 +355,38 @@
         <div class="page-title">
           <p class="eyebrow">FAQ</p>
           <h1>常见问题</h1>
-          <p>第一版 FAQ 用于占位和导航。后续可以把浙江中医药大学各学院的最新通知链接集中到这里。</p>
+          <p>先回答使用网站和准备流程时最常见的几个问题。</p>
         </div>
 
         <div class="faq-list">
           <details open>
-            <summary>这个网站可以给别人访问吗？</summary>
-            <p>可以。当前文件是纯静态网页，别人可以通过公开链接访问。</p>
+            <summary>这个网站免费吗？需要注册吗？</summary>
+            <p>免费开放，不用注册。你可以直接阅读路线图、材料清单和面试准备内容，也欢迎把网站链接分享给需要的同学。</p>
           </details>
           <details>
             <summary>页面里的政策信息能直接作为依据吗？</summary>
-            <p>不能。推免规则、名额、排名口径、加分细则都可能变化，正式依据应以浙江中医药大学、学院和目标院校当年发布的通知为准。</p>
+            <p>不能。推免规则、名额、排名口径、加分细则都可能变化，正式依据应以所在学校、学院和目标院校当年发布的通知为准。</p>
           </details>
           <details>
             <summary>后续可以增加哪些内容？</summary>
             <p>可以增加公告链接、院校项目表、经验文章、下载资料、面试题库、时间提醒、在线表单或投稿入口。</p>
           </details>
           <details>
-            <summary>为什么叫 DSM？</summary>
-            <p>没有为什么哈哈哈哈哈哈哈。</p>
+            <summary>DoSimi 分享哪些内容？</summary>
+            <p>从夏令营、预推免到正式推免，分享自己整理的准备路线、材料清单、面试重点和经验。已整理好的内容直接放在网站上，后续资料会继续补充。</p>
           </details>
+        </div>
+
+        <div class="closing-message" aria-label="给各位学子的祝福">
+          <p>本人衷心祝愿各位学子能上岸心仪院校！</p>
+          <p>无数熬过的夜晚自会证明你我的努力绝不会白费！</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>DSM 保研信息分享站 · 最初版本 · 更新日期：2026-05-20</p>
-      <a href="#home">返回顶部</a>
+      <p>DoSimi 保研信息分享站 · 免费开放 · 更新日期：2026-10-15</p>
+      <div class="footer-links"><a href="https://ai-mingrizhiwai-baoyan.netlify.app/">主入口</a><a href="https://dongsiming-1110.github.io/baoyan/">GitHub 备用入口</a><a href="#home">返回顶部</a></div>
     </footer>
 
     <script src="./app.js" defer></script>
