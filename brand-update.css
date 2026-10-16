@@ -19,6 +19,10 @@
 .creator-line p { margin: 0; }
 .creator-line .maker-line { font-size: 18px; }
 .creator-line div > p:last-child { margin-top: 2px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+a.creator-line { width: fit-content; max-width: 100%; border-radius: 12px; padding: 8px 12px 8px 8px; margin-left: -8px; text-decoration: none; transition: background 160ms ease; }
+a.creator-line:hover { background: #e3eee8; }
+a.creator-line:hover .maker-line { color: #0f4d43; text-decoration: underline; text-underline-offset: 4px; }
+.creator-visit { display: block; margin-top: 4px; color: #226d60; font-size: 12px; font-weight: 700; }
 .admission-flow { margin-top: 12px; padding: 32px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .flow-heading h2 { font-size: 30px; }
 .flow-heading > p:last-child, .flow-note { color: var(--muted); font-size: 14px; }
